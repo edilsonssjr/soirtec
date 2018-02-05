@@ -1,0 +1,25 @@
+<mat-toolbar>
+    <div class="topo">
+        <img [src]="logo">
+    </div>
+    <div class="voltar"><button mat-button routerLink="/">Voltar</button></div>
+</mat-toolbar>
+
+<mat-card>
+    <ngx-loading [show]="loading"></ngx-loading>
+    <div class="card-image">
+        <img src="{{movie?.Poster}}" alt="">
+    </div>
+    <div class="card-info">
+        <h2 class="title">{{movie?.Title}}</h2>
+        <p><b>Tipo:</b> {{movie?.Type}}</p>
+        <p><b>Gênero:</b> {{movie?.Genre}}</p>
+        <p><b>Atores:</b> {{movie?.Actors}}</p>
+        <p><b>Diretor:</b> {{movie?.Director}}</p>
+        <p><b>Linguagens:</b> {{movie?.Language}}</p>
+        <p><b>Produção:</b> {{movie?.Production}}</p>
+        <p><b>País:</b> {{movie?.Country}}</p>
+        <p><b>Duração:</b> {{movie?.Runtime}}</p>
+        <p><b>Descrição:</b> {{movie?.Plot}}</p>
+    </div>
+</mat-card>

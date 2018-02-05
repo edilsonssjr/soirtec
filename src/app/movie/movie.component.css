@@ -1,0 +1,26 @@
+.card-image{
+    display: inline-block;
+}
+.card-info{
+    display: inline-block;
+    width: 65%;
+    vertical-align: top;
+}
+.card-info p{
+    text-align: left !important;
+    margin-left: 5%;
+}
+.title{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #3ba9db;
+    background: #d5dae1;
+    margin-top: 0;
+}
+mat-card{
+    text-align: center;
+}
+.voltar{
+    position: absolute;
+    right: 2%;
+}
