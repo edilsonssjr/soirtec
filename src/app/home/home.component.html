@@ -17,9 +17,9 @@
 
 <ngx-loading [show]="loading"></ngx-loading>
 
-<p class="lista listMovie" *ngFor="let movie of movies | paginate: { itemsPerPage: 10, currentPage: p }">{{movie.Title}} <img src="assets/img/plus.svg" routerLink="/movie/{{movie.imdbID}}"></p>
+<p class="lista listMovie" *ngFor="let movie of movies | paginate: { itemsPerPage: 10 }">{{movie.Title}} <img src="assets/img/plus.svg" routerLink="/movie/{{movie.imdbID}}"></p>
 
-<p *ngFor="let item of pages | paginate: { itemsPerPage: 10, currentPage: p }"></p>
+<p *ngFor="let item of pages | paginate: { itemsPerPage: 10}"></p>
 
 <pagination-controls  *ngIf="total > 0" (pageChange)="p = $event"></pagination-controls>
  

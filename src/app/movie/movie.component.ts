@@ -15,7 +15,7 @@ export class MovieComponent implements OnInit {
 
   params : any
 
-  movie : object;
+  movie : any
 
   public loading = false;
 
